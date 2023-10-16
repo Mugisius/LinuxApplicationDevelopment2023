@@ -1,0 +1,27 @@
+set pagination off
+b range.c:18 if i%5 == 0
+b range.c:21 if (((i-atoi(argv[1]))/(atoi(argv[3])) + 1) >= 28) && (((i-atoi(argv[1]))/(atoi(argv[3])) + 1) <= 35)
+command 1
+        p i
+        p atoi(argv[1])
+        p atoi(argv[2])
+        cont
+end
+command 2
+        p i
+        p atoi(argv[1])
+        p atoi(argv[2])
+        p atoi(argv[3])
+        cont
+end
+
+
+set args 1 12
+run
+
+shell echo "$"
+
+set args -100 100 3 
+run
+
+quit
