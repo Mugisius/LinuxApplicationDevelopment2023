@@ -1,0 +1,53 @@
+--- maze.c.tmp	2023-11-23 23:41:07.174973700 +0300
++++ 123/mazeTS.c	2023-11-23 22:52:06.934091900 +0300
+@@ -3,12 +3,12 @@
+ #include <string.h>
+ #include <time.h>
+  
+-#define msize 6
++#define maxsize 1000
+ #define arsize 2*msize*(msize-1)
+ #define prsize (2*msize+1)*(2*msize+2)
+  
+ 
+-int in(int * node, int in_tree[msize*msize][2], int in_tree_n)
++int in(int * node, int in_tree[maxsize*maxsize][2], int in_tree_n)
+ {
+     int in_t = 0;
+     for (int i = 0; i < in_tree_n; i++)
+@@ -17,8 +17,15 @@
+     return in_t; 
+ }
+ 
+-int main()
++int main(int argc, char *argv[])
+ {
++    if ( argc < 3 ){
++        fprintf(stderr, "Usage: %s \"pw\" size\n", argv[0]);
++        exit(EXIT_FAILURE);
++    }
++    int msize = atoi(argv[2]);
++    char path_c = argv[1][0];
++    char wall_c = argv[1][1];
+     srand(time(NULL));
+ 
+     int G[arsize][2][2], spanning[msize*msize-1][2][2], in_tree[msize*msize][2];
+@@ -101,15 +108,15 @@
+         if ((i+1)%(2*msize+2) == 0)
+             maze[i] = '\n';
+         else if (i % (4*msize+4) > (2*msize+1) && i % 2 == 1)
+-            maze[i] = '.';
++            maze[i] = path_c;
+         else
+-            maze[i] = '#';
++            maze[i] = wall_c;
+     maze[prsize-1] = 0;
+     //printf("%s\n\n", maze); 
+         
+     
+     for(int i = 0; i < spanning_n; i++)
+-        maze[ spanning[i][0][0] + spanning[i][1][0] + 1 + (spanning[i][0][1] + spanning[i][1][1] + 1) *(2*msize+2) ] = '.';
++        maze[ spanning[i][0][0] + spanning[i][1][0] + 1 + (spanning[i][0][1] + spanning[i][1][1] + 1) *(2*msize+2) ] = path_c;
+     printf("%s\n", maze); 
+ 	return 0;
+ }

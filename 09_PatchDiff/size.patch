@@ -1,0 +1,32 @@
+--- maze.c.tmp	2023-11-23 23:29:46.358785700 +0300
++++ mazeS.c	2023-11-23 22:51:42.837065000 +0300
+@@ -3,12 +3,12 @@
+ #include <string.h>
+ #include <time.h>
+  
+-#define msize 6
++#define maxsize 1000
+ #define arsize 2*msize*(msize-1)
+ #define prsize (2*msize+1)*(2*msize+2)
+  
+ 
+-int in(int * node, int in_tree[msize*msize][2], int in_tree_n)
++int in(int * node, int in_tree[maxsize*maxsize][2], int in_tree_n)
+ {
+     int in_t = 0;
+     for (int i = 0; i < in_tree_n; i++)
+@@ -17,8 +17,13 @@
+     return in_t; 
+ }
+ 
+-int main()
++int main(int argc, char *argv[])
+ {
++    if ( argc < 2 ){
++        fprintf(stderr, "Usage: %s size\n", argv[0]);
++        exit(EXIT_FAILURE);
++    }
++    int msize = atoi(argv[1]);
+     srand(time(NULL));
+ 
+     int G[arsize][2][2], spanning[msize*msize-1][2][2], in_tree[msize*msize][2];
