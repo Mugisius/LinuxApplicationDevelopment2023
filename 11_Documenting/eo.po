@@ -7,7 +7,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: guesser 0.0.0\n"
 "Report-Msgid-Bugs-To: \n"
+<<<<<<< HEAD
+"POT-Creation-Date: 2023-12-05 23:58+0300\n"
+=======
 "POT-Creation-Date: 2023-11-13 22:35+0300\n"
+>>>>>>> 581791d36270e0aa9104f0aee1c5afd8a83682cf
 "PO-Revision-Date: 2023-11-13 22:49+0300\n"
 "Last-Translator:  <AK@ka.net>\n"
 "Language-Team: Esperanto <translation-team-eo@lists.sourceforge.net>\n"
@@ -17,6 +21,60 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
+<<<<<<< HEAD
+#: guesser.c:79
+#, c-format
+msgid "Usage: %s [-r | --help]\n"
+msgstr ""
+
+#: guesser.c:87
+#, c-format
+msgid ""
+"\n"
+"Number guesser\n"
+"\n"
+"This is free and unencumbered software released into the public domain.\n"
+"\n"
+"\tThis is simple program that can guess the hidden number\n"
+"\tThe program tries to guess the number by dividing the allowed\n"
+"\tinterval into two parts, and asking which of the parts the\n"
+"\thidden number belongs to.\n"
+"\n"
+"Usage:\n"
+"\t %s [-r]\n"
+"\n"
+"\n"
+"\t-r\tSwitch number notation to Roman\n"
+"\n"
+msgstr ""
+
+#: guesser.c:95
+#, c-format
+msgid "Usage: %s [-r]\n"
+msgstr ""
+
+#: guesser.c:99
+msgid "Think of a number from 1 to 100.\n"
+msgstr "Pensu pri nombro de 1 ĝis 100.\n"
+
+#: guesser.c:108
+#, c-format
+msgid "Is your number greater than %s? [y/n]:"
+msgstr "Ĉu via nombro estas pli granda ol %s? [j/n]:"
+
+#: guesser.c:111
+msgid "y\n"
+msgstr "j\n"
+
+#: guesser.c:113
+msgid "n\n"
+msgstr "n\n"
+
+#: guesser.c:119
+#, c-format
+msgid "Your number is %s!\n"
+msgstr "Via nombro estas %s!\n"
+=======
 #: guesser.c:23
 msgid "Think of a number from 1 to 100.\n"
 msgstr "Pensu pri nombro de 1 ĝis 100.\n"
@@ -38,3 +96,4 @@ msgstr "n\n"
 #, c-format
 msgid "Your number is %d!\n"
 msgstr "Via nombro estas %d!\n"
+>>>>>>> 581791d36270e0aa9104f0aee1c5afd8a83682cf

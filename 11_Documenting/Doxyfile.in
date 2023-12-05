@@ -2130,7 +2130,11 @@ RTF_EXTENSIONS_FILE    =
 # classes and files.
 # The default value is: NO.
 
+<<<<<<< HEAD
+GENERATE_MAN           = YES
+=======
 GENERATE_MAN           = NO
+>>>>>>> 581791d36270e0aa9104f0aee1c5afd8a83682cf
 
 # The MAN_OUTPUT tag is used to specify where the man pages will be put. If a
 # relative path is entered the value of OUTPUT_DIRECTORY will be put in front of
@@ -2148,7 +2152,11 @@ MAN_OUTPUT             = man
 # The default value is: .3.
 # This tag requires that the tag GENERATE_MAN is set to YES.
 
+<<<<<<< HEAD
+MAN_EXTENSION          = .1
+=======
 MAN_EXTENSION          = .3
+>>>>>>> 581791d36270e0aa9104f0aee1c5afd8a83682cf
 
 # The MAN_SUBDIR tag determines the name of the directory created within
 # MAN_OUTPUT in which the man pages are placed. If defaults to man followed by

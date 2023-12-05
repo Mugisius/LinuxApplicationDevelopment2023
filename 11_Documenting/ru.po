@@ -7,7 +7,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: guesser 0.0.0\n"
 "Report-Msgid-Bugs-To: \n"
+<<<<<<< HEAD
+"POT-Creation-Date: 2023-12-05 23:58+0300\n"
+=======
 "POT-Creation-Date: 2023-11-13 22:35+0300\n"
+>>>>>>> 581791d36270e0aa9104f0aee1c5afd8a83682cf
 "PO-Revision-Date: 2023-11-13 20:57+0300\n"
 "Last-Translator:  <Ak@ka.net>\n"
 "Language-Team: Russian <gnu@d07.ru>\n"
@@ -18,6 +22,77 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 
+<<<<<<< HEAD
+#: guesser.c:79
+#, c-format
+msgid "Usage: %s [-r | --help]\n"
+msgstr "Использование: %s [-r | --help]\n"
+
+#: guesser.c:87
+#, c-format
+msgid ""
+"\n"
+"Number guesser\n"
+"\n"
+"This is free and unencumbered software released into the public domain.\n"
+"\n"
+"\tThis is simple program that can guess the hidden number\n"
+"\tThe program tries to guess the number by dividing the allowed\n"
+"\tinterval into two parts, and asking which of the parts the\n"
+"\thidden number belongs to.\n"
+"\n"
+"Usage:\n"
+"\t %s [-r]\n"
+"\n"
+"\n"
+"\t-r\tSwitch number notation to Roman\n"
+"\n"
+msgstr ""
+"\n"
+"Угадыватель числа\n"
+"\n"
+"Это бесплатное и ничем не отягощающее программное обеспечение, выпущенное в "
+"общественное достояние.\n"
+"\n"
+"\tЭто простая программа, которая может угадать скрытое число\n"
+"\tПрограмма пытается угадать число, разделяя\n"
+"\tдопустимый интервал на две части и спрашивая, \n"
+"\tк какой из частей относится искомое число.\n"
+"\n"
+"Использование:\n"
+"\t %s [-r]\n"
+"\n"
+"\n"
+"\t-r\tСменить написание чисел на Римскую нотацию\n"
+"\n"
+
+#: guesser.c:95
+#, c-format
+msgid "Usage: %s [-r]\n"
+msgstr "Использование: %s [-r]\n"
+
+#: guesser.c:99
+msgid "Think of a number from 1 to 100.\n"
+msgstr "Загадайте число от 1 до 100.\n"
+
+#: guesser.c:108
+#, c-format
+msgid "Is your number greater than %s? [y/n]:"
+msgstr "Ваше число больше чем %s? [д/н]:"
+
+#: guesser.c:111
+msgid "y\n"
+msgstr "д\n"
+
+#: guesser.c:113
+msgid "n\n"
+msgstr "н\n"
+
+#: guesser.c:119
+#, c-format
+msgid "Your number is %s!\n"
+msgstr "Ваше число это %s!\n"
+=======
 #: guesser.c:23
 msgid "Think of a number from 1 to 100.\n"
 msgstr "Загадайте число от 1 до 100.\n"
@@ -39,3 +114,4 @@ msgstr "н\n"
 #, c-format
 msgid "Your number is %d!\n"
 msgstr "Ваше число это %d!\n"
+>>>>>>> 581791d36270e0aa9104f0aee1c5afd8a83682cf
